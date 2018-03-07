@@ -1,6 +1,6 @@
 # Контейнер для статики (6 mb)
 
-[![build status](https://gitlab.teamc.io/teamc.io/docker/static/badges/master/build.svg)](https://gitlab.teamc.io/teamc.io/docker/static/commits/master)
+[![CircleCI](https://circleci.com/gh/teamcio/docker-nginx-static.svg?style=svg)](https://circleci.com/gh/teamcio/docker-nginx-static)
 
 Поддерживает PushState для history API.
 
