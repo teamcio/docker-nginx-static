@@ -1,0 +1,12 @@
+before_script:
+  - pwd
+
+stages:
+  - build_push
+
+build_push:
+  stage: build_push
+  tags: [docker]
+  script:
+    - docker login -u gitlab-ci-token -p ${CI_BUILD_TOKEN} ${CI_REGISTRY}
+    - make build && make push
