@@ -1,0 +1,16 @@
+version: 2
+jobs:
+  image:
+    machine: true
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - run:
+          name: Build container
+          command: make build
+      - run:
+          name: Login to the docker hub
+          command: docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD"
+      - run:
+          name: Push image to registry
+          command: make push
