@@ -1,8 +1,7 @@
 IMAGE_NAME = teamcio/docker-nginx-static
 VERSION = latest
 
-default:
-	make build && make run
+default: build run
 
 build:
 	docker build \
