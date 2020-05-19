@@ -1,3 +1,6 @@
+This package moved to https://github.com/spacetab-io/docker-nginx-static
+-----------------
+
 # Контейнер для статики (6 mb)
 
 [![CircleCI](https://circleci.com/gh/teamcio/docker-nginx-static.svg?style=svg)](https://circleci.com/gh/teamcio/docker-nginx-static)
